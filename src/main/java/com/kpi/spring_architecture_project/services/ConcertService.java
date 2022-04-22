@@ -44,10 +44,10 @@ public class ConcertService {
 
     public String index(Model model){
         Iterable<Concert> concerts = concertRepository.findAll();
-
+        System.out.println("balooo");
         model.addAttribute("concerts" , concerts);
 
-        return "redirect:/concerts";
+        return "index";
     }
 
     public String addConcert(String place, String designation, String performanceName,
