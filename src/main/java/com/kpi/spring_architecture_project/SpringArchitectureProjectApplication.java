@@ -9,7 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
 public class SpringArchitectureProjectApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(SpringArchitectureProjectApplication.class, args);
+
 	}
 
 }

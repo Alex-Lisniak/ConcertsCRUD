@@ -1,6 +1,7 @@
 package com.kpi.spring_architecture_project;
 
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,6 +10,7 @@ public class AchievementsGenerator {
     public static String arrayOfMiddles[] = {" role ", " voice ", " eyes ", " arms "};
     public static String arrayOfEnds[] = {" in cinema ", " forever ", " humanity sees ", " of America "};
 
+    @Bean
     public static String generateAnAchievement() {
 
         StringBuilder string = new StringBuilder("The ");
